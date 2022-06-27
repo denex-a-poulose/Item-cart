@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   
+   <title>Item Cart</title>
+  
+  <style>
+     body{
+   background:#050824;
+
+}
+
+.top{
+   margin-top: 10rem;
+
+}
+
+.title{
+
+   color: #050824;
+}
+
+.name{
+   color: #050824;
+}
+
+.quantity{
+   color: #050824;
+}
+
+.itembtn{
+   color: white;
+}
+
+
+.credits{
+   color: white;
+   margin-top: 150px;
+   text-align: center;
+   font-size: 14px;
+}
+
+.credits span{
+   color: #a3a1a6;
+   font-family: 'Kaushan Script', cursive;
+}
+
+  </style>
+  
+  
+</head>
+
+<body>
+   <main class="d-flex justify-content-center align-items-center top">
+      <div style="width:35rem;" class="card p-3">
+         <div id="alert" class="alert "></div>
+         <h2 class="text-center title">Item cart</h2>
+         <form id="shop-form">
+            <div class="mb-3">
+               <label for="item-name" class="form-label name">Item Name</label>
+               <input type="text" id="item-name" class="form-control">
+            </div>
+            <div class="mb-3">
+               <label for="item-qty" class="form-label quantity">Item Quantity</label>
+               <input type="number" id="item-qty" class="form-control">
+            </div>
+            <div class="mb-3 d-grid">
+               <button type="submit" class="btn btn-primary itembtn">Add Item</button>
+            </div>
+         </form>
+      </div>
+   </main>
+   <!--Table-->
+
+   <section class="mt-5">
+      <div class="container">
+         <table class="table table-bordered">
+            <thead>
+               <th class="text-white">ID</th>
+               <th class="text-white">Item Name</th>
+               <th class="text-white">Item Qty</th>
+               <th class="text-white">Remove</th>
+            </thead>
+            <tbody class="text-white" id="list">
+
+            </tbody>
+         </table>
+      </div>
+   </section>
+
+
+<footer>
+  <h3 class="credits">Built by <span>Denex</span></h3>
+</footer>
+   <script src="./script.js"></script>
+</body>
+
+</html>
